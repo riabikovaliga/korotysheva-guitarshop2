@@ -1,0 +1,25 @@
+@import "../../scss/colors";
+
+.input {
+  position: relative;
+
+  &--error .input__block {
+    border-color: $color-error;
+  }
+
+  &--error .input__label {
+    font-size: 12px;
+    line-height: 12px;
+    color: $color-error;
+  }
+}
+
+.input__block {
+  @include input-field;
+}
+
+.input__label {
+  @include label;
+  position: absolute;
+  bottom: -5px;
+}

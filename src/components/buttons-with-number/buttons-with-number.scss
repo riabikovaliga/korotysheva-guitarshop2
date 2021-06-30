@@ -1,0 +1,43 @@
+.buttons-with-number {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  border: $color-service--lightest 0.7px solid;
+  width: 82px;
+  height: 30px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.buttons-with-number__value {
+  flex-grow: 1;
+  max-width: 30px;
+  color: $color-service--lightest;
+  font-size: 16px;
+  line-height: 30px;
+  height: 100%;
+  border: none;
+  text-align: center;
+  border-left: $color-service--lightest 0.7px solid;
+  border-right: $color-service--lightest 0.7px solid;
+}
+
+.buttons-with-number__button {
+  width: 28px;
+  border: none;
+  background: transparent;
+  outline: 0;
+  font-size: 16px;
+  line-height: 30px;
+  cursor: pointer;
+  color: $color-service--lightest;
+
+  &:hover,
+  &:focus {
+    color: $color-service--light;
+  }
+
+  &:active {
+    color: $color-service--lighten;
+  }
+}

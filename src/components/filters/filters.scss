@@ -1,0 +1,50 @@
+.filters {
+  max-width: 228px;
+  min-width: 190px;
+  padding-right: 20px;
+  overflow: hidden;
+}
+
+.filters__title {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 700;
+  width: 100%;
+  color: $color-service;
+  margin-bottom: 28px;
+  letter-spacing: 0.02em;
+}
+
+.filters__submit {
+  margin-top: 30px;
+}
+
+.price-block__title,
+.strings-block__title,
+.type-block__title {
+  padding-top: 30px;
+  margin-bottom: 24px;
+  min-width: 100%;
+}
+
+.filters__block {
+  border-top: 1px $color-service--lightest solid;
+  margin-bottom: 17px;
+}
+
+.price-block {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.price-block__line {
+  padding-top: 2px;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.price-block__begin,
+.price-block__end {
+  max-width: 40%;
+}

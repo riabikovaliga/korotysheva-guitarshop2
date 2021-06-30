@@ -1,0 +1,46 @@
+.pagination {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  height: 24px;
+}
+
+.pagination__button {
+  @include button-outline;
+  max-height: 100%;
+  min-width: 24px;
+  max-width: 80px;
+  font-weight: 400;
+  font-size: 12px;
+  margin-left: 11px;
+  color: $color-service--light;
+  border: $color-grey--lighten 0.7px solid;
+
+  &:focus {
+    font-weight: 400;
+    font-size: 12px;
+    border: $color-background--dark 0.7px solid;
+    background-color: $color-background--dark;
+    color: $color-background;
+  }
+
+  &--next,
+  &--prev {
+    min-width: 80px;
+    max-width: 80px;
+  }
+
+  &--dots {
+    cursor: text;
+  }
+
+  &--active {
+    font-weight: 400;
+    font-size: 12px;
+    border: $color-background--dark 0.7px solid;
+    background-color: $color-background--dark;
+    color: $color-background;
+  }
+}

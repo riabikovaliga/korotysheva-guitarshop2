@@ -1,0 +1,18 @@
+.breadcrumbs {
+  @include flex-row-center;
+  justify-content: flex-start;
+  list-style: none;
+  margin-bottom: 50px;
+
+  &--basket {
+    margin-bottom: 27px;
+  }
+}
+
+.breadcrumbs__link {
+  font-size: 16px;
+  line-height: 19px;
+
+  color: $color-service--light;
+  text-decoration: none;
+}

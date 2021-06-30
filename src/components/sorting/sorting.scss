@@ -1,0 +1,46 @@
+.sorting {
+  display: flex;
+  flex-direction: row;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.07em;
+}
+
+.sorting__title {
+  margin-right: 14px;
+}
+
+.sorting__wrapper {
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.sorting__item {
+  display: flex;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.07em;
+  cursor: pointer;
+  color: $color-background--dark;
+  margin-right: 35px;
+  background-color: transparent;
+  border: none;
+  text-decoration: none;
+
+  &--img {
+    margin: 0;
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+
+  &--active {
+    color: $color-service;
+  }
+
+  &--active path {
+    fill: $color-service;
+  }
+}

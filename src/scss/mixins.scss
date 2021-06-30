@@ -1,0 +1,161 @@
+@import "colors";
+
+@mixin title {
+  font-size: 22px;
+  line-height: 25px;
+  font-weight: 700;
+  color: $color-service;
+  letter-spacing: 0.03em;
+}
+
+@mixin flex-row-center {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@mixin button {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: $color-background;
+  background-color: $color-service--lightest;
+  min-width: 120px;
+  height: 30px;
+  text-decoration: none;
+
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 700;
+
+  border: none;
+  border-radius: 2px;
+  vertical-align: middle;
+  text-align: center;
+
+  &:hover,
+  &:focus {
+    background-color: $color-service--light;
+    transition: 0.3s ease;
+  }
+
+  &:active {
+    background-color: $color-service--lighten;
+    transition: 0.3s ease;
+  }
+
+  &[disabled] {
+    color: $color-service--lightest;
+    cursor: not-allowed;
+  }
+}
+
+@mixin button-orange {
+  @include button-outline;
+
+  background-color: $color-main;
+  border: 1px $color-main solid;
+  color: $color-background;
+
+  &:hover,
+  &:focus {
+    background-color: $color-orange--light;
+    border-color: $color-orange--light;
+    transition: 0.3s ease;
+    color: $color-background;
+  }
+
+  &:active {
+    background-color: $color-orange--dark;
+    border-color: $color-orange--dark;
+    transition: 0.3s ease;
+    color: $color-background;
+  }
+}
+
+@mixin button-outline {
+  @include button;
+  min-width: 220px;
+  background-color: transparent;
+  border: 1px $color-service--light solid;
+  color: $color-service--light;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 0.05em;
+
+  &:hover,
+  &:focus {
+    color: $color-service--lighten;
+    border-color: $color-service--lighten;
+    background-color: transparent;
+    transition: 0.3s ease;
+  }
+
+  &:active {
+    color: $color-service--lightest;
+    border-color: $color-service--lightest;
+    background-color: transparent;
+    transition: 0.3s ease;
+  }
+}
+
+@mixin button--small {
+  @include button;
+  min-width: 87px;
+  height: 23px;
+}
+
+@mixin button-orange--small {
+  @include button-orange;
+  min-width: 87px;
+  height: 23px;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+@mixin input-field {
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 500;
+  color: black;
+  background-color: transparent;
+  border-radius: 2px;
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+  text-transform: uppercase;
+
+  width: 100%;
+  padding: 5px;
+  min-height: 24px;
+  margin-bottom: 12px;
+  border: 0.7px $color-service--lighten solid;
+
+  &:focus,
+  &:hover {
+    border-color: $color-service--light;
+  }
+
+  &:active {
+    border-color: $color-service--lightest;
+  }
+}
+
+@mixin label {
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  font-weight: 400;
+  color: $color-service;
+  display: block;
+}

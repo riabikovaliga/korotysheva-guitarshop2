@@ -1,0 +1,9 @@
+.main__title {
+  @include title;
+  padding-bottom: 6px;
+}
+
+.main__content {
+  display: flex;
+  flex-wrap: nowrap;
+}

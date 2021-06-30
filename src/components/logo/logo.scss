@@ -1,0 +1,9 @@
+.logo {
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: .5;
+  }
+}
+
